@@ -1,0 +1,23 @@
+.wrapper{
+   
+    max-width: 70rem;
+    margin: 2rem auto; /*em cima e em baixo 2rem, e esse auto vai centralizar na tela tbm*/
+    padding: 0 1rem; /*para quando diminuir a tela não fica muito colado*/
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /* a primeira é o sidebar, com valor fixo, e a segunda a gente ta falando que vai ser maleavel*/
+    gap: 2rem; /*entre eles*/
+    align-items: flex-start; /*sempre ficar alinhado com o topo*/
+}
+
+
+@media (max-width: 768px){
+
+    html{
+        font-size: 87.5%;
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}

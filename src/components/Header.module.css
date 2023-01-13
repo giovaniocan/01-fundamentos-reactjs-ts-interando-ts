@@ -1,0 +1,12 @@
+.header {
+    background:var(--gray-700);
+    display: flex;
+    justify-content: center; /*para centralizar horizontalmente*/
+
+    padding: 1.25rem 0; /*o primeiro é para o vertical, e o segundo é horizontal*/
+}
+
+.header img{
+    height: 2rem;
+}
+

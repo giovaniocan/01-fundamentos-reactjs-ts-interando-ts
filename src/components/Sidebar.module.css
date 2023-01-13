@@ -1,0 +1,62 @@
+.sidebar{
+    background-color: var(--gray-800);
+    border-radius: 8px;
+    overflow: hidden; /*a gente meio que faz a imagem entra na sidebar ( meio que limita ela )*/
+}
+
+.cover{
+    width: 100%;
+    height: 72px;
+    object-fit: cover; /*para a imagem não ficar destorcida*/
+}
+
+.profile{
+    display: flex;
+    flex-direction:column; /*para ficar um abaixo do outro*/
+    align-items: center;
+    margin-top: calc(0px - 1.5rem - 6px);
+}
+.profile strong{
+    margin-top:1rem ;
+    color: var(--gray-100);
+    line-height: 1.6; /*controla o espaçamento entre linhas*/
+}
+.sidebar footer{
+     border-top: 1px solid var(--gray-600);
+     margin-top: 1.5rem;
+     padding: 1rem 2rem 2rem; /*2 em cima, 2 dos lados, e 2 abaixo*/
+}
+
+.profile span{
+    font: 0.875rem;
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+
+.sidebar footer a {
+    width: 100%;
+    background:transparent;
+    color: var(--green-500);
+    border: 1px solid var(--green-500);
+    border-radius: 8px;
+    height: 70px;
+    padding: 0 1.5rem;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 0.5rem; /*para dar um espaçamento*/
+
+    transition: color 0.2s, background-color 0.2s ; /*para fazer a transição do hover   */
+}
+
+
+.sidebar footer a:hover{
+    background: var(--green-500);
+    color: white;
+    
+}
